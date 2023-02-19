@@ -67,7 +67,7 @@
 \newCJKfontfamily\heiti{SimHei.ttf}[AutoFakeSlant,AutoFakeBold]
 
 % 论文中文题目
-\newcommand{\thesisTitle}{基于TEnsorFlow\hspace{1em}Lite开发的的图像识别程序}
+\newcommand{\thesisTitle}{基于TEnsorFlow\hspace{0.5em}Lite开发的的图像识别程序}
 % 论文英文题目（可选）
 \newcommand{\thesisTitleEN}{The Subject of Undergraduate Graduation Project (Thesis)}
 
@@ -280,8 +280,6 @@
 
 % 文档开始
 \begin{document}
-\tableofcontents
-\newpage
 
 % 标题页面：如无特殊需要，本部分无需改动
 \input{misc/0_cover.tex}
@@ -307,6 +305,8 @@
 \input{sections/2_Purpose.tex}
 
 \input{sections/3_Tensorflow_Lite.tex}
+
+\newpage
 
 \input{sections/4_Design.tex}
 
