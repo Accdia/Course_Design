@@ -1,0 +1,40 @@
+%%
+% NCHU Bachelor Proposal Report Template
+%
+% 南昌航空大学毕业设计开题报告（研究内容及实验方案）—— 使用 XeLaTeX 编译
+%
+% Copyright 2023 Arnold Chow
+%
+% The Current Maintainer of this work is Arnold Chow.
+%
+% Compile with: xelatex -> biber -> xelatex -> xelatex
+
+\section{Tensorflow\hspace{0.5em}Lite}
+TensorFlow Lite是流行的开源机器学习框架TensorFlow的轻量级版本，专为在移动和嵌入式设备上运行机器
+学习模型而设计。它提供了一组工具和库，用于在资源有限的设备上构建、优化和部署机器学习模型，例如智能
+手机、平板电脑、智能手表和物联网 （IoT） 设备。
+
+与完整版TensorFlow不同，TensorFlow\hspace{0.5em}Lite专为在功能强大的服务器和工作站上进行高性能计
+算而设计，TensorFlow\hspace{0.5em}Lite针对在低功耗和有限处理能力的设备上运行进行了优化。
+TensorFlow\hspace{0.5em}Lite 可用于广泛的机器学习任务，包括图像识别、对象检测、自然语言处理和语音识别。
+它拥有许多功能和优势，使其成为在资源有限的设备上构建机器学习应用程序的有吸引力的选择。
+
+相对于其他图像识别技术，TensorFlow\hspace{0.5em}Lite具有以下优势：
+\begin{enumerate}
+    \item 轻量级：TensorFlow Lite是专门为移动和嵌入式设备设计的轻量级框架。它占用空间小，非常适合部署在智能手机和物联网设备等资源受限的设备上。
+    \item 快速高效：TensorFlow Lite 针对移动和嵌入式设备进行了优化，使其在处理速度和功耗方面快速高效。这允许在边缘设备上实时执行机器学习模型。
+    \item 易于使用：TensorFlow Lite易于集成到现有的移动应用程序中，并支持广泛的平台，包括Android，iOS和Linux。
+    \item 与TensorFlow兼容：TensorFlow Lite建立在TensorFlow框架之上，可以轻松地将TensorFlow模型转换为TensorFlow Lite模型，以便在移动和嵌入式设备上部署。
+\end{enumerate}
+
+而TensorFlow\hspace{0.5em}Lite在拥有以上有点情况同时，还有以下缺点：
+\begin{enumerate}
+    \item 功能有限：与完整版的TensorFlow相比，TensorFlow\hspace{0.5em}Lite的功能有限。它仅支持TensorFlow操作的子集，不支持分布式计算。
+    \item 模型大小受限：由于移动和嵌入式设备的约束，可以在TensorFlow\hspace{0.5em}Lite上部署的机器学习模型的大小受到限制。这可能会使在这些设备上部署更复杂的模型变得具有挑战性。
+    \item 可定制性较差：TensorFlow\hspace{0.5em}Lite专为在移动和嵌入式设备上部署而设计，并针对特定用例进行了优化。与完整版的TensorFlow相比，这可能会使其可定制性降低。
+    \item 支持有限：TensorFlow\hspace{0.5em}Lite是一个相对较新的框架，因此，与完整版的TensorFlow相比，它的文档和社区支持有限。
+    \item 无法使用部分硬件加速：例如GPU、TPU、XLA等。
+\end{enumerate}
+总体而言，TensorFlow Lite是一个轻量级高效的框架，专为在移动和嵌入式设备上部署而设计。虽然它在功能和模型
+尺寸方面有一些限制，但它非常适合移动和嵌入式领域的广泛应用。
+
